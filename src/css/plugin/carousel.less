@@ -1,0 +1,89 @@
+#carousel-containner {
+
+    width: 90%;
+    margin: 0 5%;
+}
+
+.carousel {
+    height: 224px;
+    overflow: hidden;
+    margin: 10px auto;
+
+}
+
+.img-list {
+    position: relative;
+}
+
+.img-item {
+    position: absolute;
+    width: 50%;
+    transition:all 0s;
+    -webkit-transition:all 0s;
+    z-index: 0;
+    opacity: 0;
+    border-radius: 5px;
+    overflow: hidden;
+    transform:matrix(0.8,0.0,0.0,0.8,0,0);
+    -webkit-transform:matrix(0.8,0.0,0.0,0.8,0,0);
+}
+
+.img-item img{
+    width: 100%;
+    vertical-align: bottom;
+}
+
+.prev-img-item {
+    z-index: 1;
+    opacity: 1;
+    transform-origin: left;
+    -webkit-transform-origin: left;
+}
+
+.next-img-item {
+    z-index: 1;
+    opacity: 1;
+    transform-origin: right;
+    -webkit-transform-origin: right;
+}
+
+.main-img-item {
+    z-index: 2;
+    opacity: 1;
+}
+
+.img-modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.main-img-item .img-modal {
+    background: rgba(0, 0, 0, 0);
+}
+
+.switch-list {
+    text-align: center;
+}
+
+.switch-item {
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    background: #E0E0E0;
+    border-radius: 50%;
+    margin: 0 0 5px 8px;
+    transition:all .8s;
+   -webkit- transition:all .8s;
+}
+
+.switch-item-active {
+    background: #EA0201;
+}
+
+.switch-list li:first-child {
+    margin-left: 0px;
+}
