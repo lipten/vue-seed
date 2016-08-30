@@ -1,3 +1,4 @@
+var path = require('path');
 
 var config = {
   entry: ['./src/main.js'],
@@ -6,11 +7,12 @@ var config = {
     publicPath: 'dist/',
     filename: 'build.js'
   },
-  // resolve: {
-  //   root: [
-  //     path.resolve('/Users/lipten/www/wesee/src/')
-  //   ],
-  // },
+  resolve: {
+    root: [
+      // 这里要填入相对系统根目录的绝对地址，用于组件引用的basePath
+      // path.resolve('/Users/jm/Documents/webApp/zongan/web/vue/src/')
+    ],
+  },
   module: {
     loaders: [
       {
