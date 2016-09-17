@@ -10,7 +10,10 @@
 var demo = require('../components/demo.vue')
 
 module.exports= {
-    components:{demo},
+    components:{demo:demo},
+    ready: function(){
+    	
+    }
 }
 </script>
 
